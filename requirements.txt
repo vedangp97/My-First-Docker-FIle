@@ -1,0 +1,8 @@
+numpy == 1.19.1
+pandas == 1.1.0
+mpu == 0.23.1
+watchdog == 0.10.3
+opencv-python == 4.4.0.40
+opencv-contrib-python == 4.4.0.40
+pdf2image == 1.13.1
+dlib == 19.21.0
