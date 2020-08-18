@@ -1,0 +1,41 @@
+#Get help for various docker commands
+docker run --help
+
+#Build docker image
+docker build -t username/imagename .
+
+#List all local docker images
+docker images
+
+#Remove docker image
+docker rmi image_id
+
+#Run the container from the image (--rm deletes after exiting container)
+docker run -it --rm username/imagename
+
+#Push image to docker repository
+docker push username/imagename
+
+#List all running containers
+docker ps
+
+#List all containers (running/not running)
+docker container ls -a
+
+#Start already saved container (Use after run -it command is used with --rm)
+docker start container_name
+
+#Get bash for running container
+docker exec -i container_name bash
+
+#Stop a running container (optional: use gui on docker desktop dashboard)
+docker stop container_name
+
+#Delete a container (optional: use gui on docker desktop dashboard)
+docker rm container_ID
+
+#Export running container as zip
+docker container export containerID > zip_name.tar.gz
+
+#Difference between docker run and docker start:
+https://stackoverflow.com/questions/34782678/difference-between-running-and-starting-a-docker-container
